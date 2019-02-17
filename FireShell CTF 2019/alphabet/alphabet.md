@@ -3,7 +3,7 @@
 ## The task:
 
 If you know your keyboard, you know the flag
-[submit_the_flag_that_is_here.7z](https://github.com/c00c00r00c00/writeups/FireShell CTF 2019/alphabet/submit_the_flag_that_is_here.7z)
+[submit_the_flag_that_is_here.7z](https://github.com/c00c00r00c00/writeups/raw/master/FireShell%20CTF%202019/alphabet/submit_the_flag_that_is_here.7z)
 
 
 ## solution
@@ -20,7 +20,7 @@ $ head -c 234 submit_the_flag_that_is_here.txt
 ```
 
 By googling first 'word' we've got that it's sha256 of `L`:
-![gglit](https://github.com/c00c00r00c00/writeups/FireShell CTF 2019/alphabet/google.png "google it")
+![gglit](https://github.com/c00c00r00c00/writeups/blob/master/FireShell%20CTF%202019/alphabet/google.png "google it")
 
 There are also 'words' by 32 chars length. By googling them we've got that it's md5 of one of the ASCII's chars.
 
