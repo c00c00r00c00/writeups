@@ -1,9 +1,9 @@
 # taks name
 
-## The task:
+## the task's description:
 copy & paste here description of a task
 
-save files of the task in task's folder
+save file(s) of the task in the same folder
 
-## solution
+## the task's solution:
 put your solution here
