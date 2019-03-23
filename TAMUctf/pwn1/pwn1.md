@@ -91,7 +91,6 @@ Then press two times `p`:
 
 you will see something like:
 
-![s1](https://github.com/c00c00r00c00/writeups/blob/master/TAMUctf/pwn1/s1.png)
 ![s1](s1.png)
 
 Set breakpoint at the first command after the first fgets just to play around.
