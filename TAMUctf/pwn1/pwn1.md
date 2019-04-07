@@ -8,7 +8,7 @@ nc pwn.tamuctf.com 4321
 Difficulty: easy
 ```
 
-[binary](pwn1)
+[binary](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/pwn1)
 
 ## solution
 
@@ -109,7 +109,7 @@ The `r2 -b 32 -d pwn1` tells radare2 to debug `pwn1` as 32-bit binary.
 
 Then press `p` two times and you'll get something like:
 
-![s1](s1.png)
+![s1](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s1.png)
 
 Set breakpoint at the command just after the first `fgets` call as you can see in the above screenshoot.
 
@@ -119,7 +119,7 @@ To check whether breakpoint has set type just `db`. To read a short help about e
 
 Then type `dc` (you should be in the command mode) to continue execution until breakpoint. Execution stops on `fgets` call. It waits for input. You'll see the first question and you can answer `Sir Lancelot of Camelot`:
 
-![s2](s2.png)
+![s2](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s2.png)
 
 After answering you should hit breakpoint as you see on the above screenshoot.
 
@@ -128,7 +128,7 @@ Let's find next `fgets` call by scrolling down disasm code. Set breakpoint on th
 
 Then execute binary until breakpoint again. The answer to the second question we already know from output of `strings` command - `To seek the Holy Grail.`:
 
-![s3](s3.png)
+![s3](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s3.png)
 
 
 Do the same: set breakpoint after third !`gets` call.
@@ -136,11 +136,11 @@ Do the same: set breakpoint after third !`gets` call.
 
 Execute the binary until breakpoint. Since we don't know the answer to the third question just put 50 `a` chars:
 
-![s4](s4.png)
+![s4](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s4.png)
 
 By pressing Enter return to visual mode:
 
-![s5](s5.png)
+![s5](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s5.png)
 
 We can see that on the above screenshot:
 
@@ -153,7 +153,7 @@ We can see that on the above screenshot:
 
 What do we have by address `ebp-0x10`? Enter to command mode and print out a hex dump of 16 bytes located by `ebp-0x10`. To do it run the `x 16 @ebp-0x10`:
 
-![s6](s6.png)
+![s6](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s6.png)
 
 You'll see `a` chars. Seems we have a [stack overflow](https://en.wikipedia.org/wiki/Stack_buffer_overflow)
 
@@ -172,7 +172,7 @@ The formula:
 
 In my case it is:
 
-![s7](s7.png)
+![s7](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s7.png)
 
 
 `0xffcafd28` - `0x10` - (`0xffcafce0` + `0xD`)
@@ -202,7 +202,7 @@ echo -e 'Sir Lancelot of Camelot\nTo seek the Holy Grail.\naaaaaaaaaaaaaaaaaaaaa
 
 But it doesn't work:
 
-![s8](s8.png)
+![s8](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s8.png)
 
 
 Hm, let's run it under radare2 again, set up breakpoint just after `gets` call, and input answer for the third questions `aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabcde`.
@@ -210,7 +210,7 @@ Hm, let's run it under radare2 again, set up breakpoint just after `gets` call, 
 
 Then let's check what we have to compare:
 
-![s9](s9.png)
+![s9](https://github.com/c00c00r00c00/writeups/raw/master/TAMUctf/pwn1/s9.png)
 
 - `cmp` instruction has 3 bytes size, so we do +3 and print 4 bytes of code;
 - the second print takes 4 bytes of `@ebx-0x10`.
