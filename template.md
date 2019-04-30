@@ -1,9 +1,10 @@
-# taks name
+## task name
+super task
 
-## the task's description:
-copy & paste here description of a task
+## task description
+copy & paste here the description of a task
 
 save file(s) of the task in the same folder
 
-## the task's solution:
+## solution
 put your solution here
