@@ -6,7 +6,7 @@ Author: Khanov Artur (awengar)
 
 This image containing flag is encrypted with affine cipher. Scrape it
 
-[zakukozh.bin](https://github.com/c00c00r00c00/writeups/blob/master/CyBRICS%20CTF%20Quals%202019/zakukozh/zakukozh.bin)
+[zakukozh.bin](https://github.com/c00c00r00c00/writeups/raw/master/CyBRICS%20CTF%20Quals%202019/zakukozh/zakukozh.bin)
 
 ## solution
 Given file is a binary which has encrypted by [affine cipher](https://en.wikipedia.org/wiki/Affine_cipher)
@@ -81,6 +81,6 @@ decoded_39_83.png       decoded_97_219.png      solution.pl
 
 The only one which is proper PNG is `decoded_239_89.png`:
 
-![flag](https://github.com/c00c00r00c00/writeups/blob/master/CyBRICS%20CTF%20Quals%202019/zakukozh/decoded_239_89.png)
+![flag](https://github.com/c00c00r00c00/writeups/raw/master/CyBRICS%20CTF%20Quals%202019/zakukozh/decoded_239_89.png)
 
 p.s.: good article about cryptanalysis of simple ciphers (rus) - https://habr.com/ru/post/271257/
