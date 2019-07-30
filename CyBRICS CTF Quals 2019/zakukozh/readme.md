@@ -81,6 +81,6 @@ decoded_39_83.png       decoded_97_219.png      solution.pl
 
 The only one which is proper PNG is `decoded_239_89.png`:
 
-![flag](decoded_239_89.png)
+![flag](https://github.com/c00c00r00c00/writeups/blob/master/CyBRICS%20CTF%20Quals%202019/zakukozh/decoded_239_89.png)
 
 p.s.: good article about cryptanalysis of simple ciphers (rus) - https://habr.com/ru/post/271257/
