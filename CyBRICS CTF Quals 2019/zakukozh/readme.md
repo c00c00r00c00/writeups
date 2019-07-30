@@ -6,7 +6,7 @@ Author: Khanov Artur (awengar)
 
 This image containing flag is encrypted with affine cipher. Scrape it
 
-[zakukozh.bin](zakukozh.bin)
+[zakukozh.bin](https://github.com/c00c00r00c00/writeups/blob/master/CyBRICS%20CTF%20Quals%202019/zakukozh/zakukozh.bin)
 
 ## solution
 Given file is a binary which has encrypted by [affine cipher](https://en.wikipedia.org/wiki/Affine_cipher)
