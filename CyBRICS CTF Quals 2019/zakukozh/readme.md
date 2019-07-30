@@ -11,6 +11,7 @@ This image containing flag is encrypted with affine cipher. Scrape it
 ## solution
 Given file is a binary which has encrypted by [affine cipher](https://en.wikipedia.org/wiki/Affine_cipher)
 
+
 >The Affine cipher is a monoalphabetic substitution cipher and it can be the exact same as a standard Caesarian shift when "a" is 1. Mathematically, it is represented as e(x) = (ax + b) mod m. Decryption is a slightly different formula, d(x) = a-1(x - b) mod m.
 
 >To encode something, you need to pick the "a" and it must be coprime with the length of the alphabet. 
@@ -18,7 +19,9 @@ Given file is a binary which has encrypted by [affine cipher](https://en.wikiped
 http://rumkin.com/tools/cipher/affine.php
 
 We know that **a** is [coprime](https://en.wikipedia.org/wiki/Coprime_integers) to alphabet.
+
 Alphabet is 256 for binary file.
+
 To calculate coprimes you can use [this script](https://github.com/c00c00r00c00/scripts/tree/master/coprimes):
 ```
 $ ./coprimes.pl 256
@@ -29,10 +32,13 @@ $ ./coprimes.pl 256
 ...
 ```
 We have 127 coprimes numbers for integer 256.
-**b** may be take any number from 0 to 255.
+
+**b** may be any number from 0 to 255.
 
 So we have to brute force 127 * 256 = 32512
+
 Or if you are lazy, you can brute force 256 * 256 = 65536
+
 No big difference : )
 
 ```
@@ -76,3 +82,5 @@ decoded_39_83.png       decoded_97_219.png      solution.pl
 The only one which is proper PNG is `decoded_239_89.png`:
 
 ![flag](decoded_239_89.png)
+
+p.s.: good article about cryptanalysis of simple ciphers (rus) - https://habr.com/ru/post/271257/
