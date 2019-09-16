@@ -53,7 +53,7 @@ rsa_table
 
 
 
-![png](output_8_0.png)
+![png](rsa.png)
 
 
 
@@ -101,16 +101,16 @@ different solutions from other teams:
 
 variant 2
 
-![solution2.PNG](attachment:solution2.PNG)
+![PNG](solution2.PNG)
 
 variant 3
 
-![solution3.PNG](attachment:solution3.PNG)
+![PNG](solution3.PNG)
 
 variant 4
 
-![solution4.PNG](attachment:solution4.PNG)
+![PNG](solution4.PNG)
 
 variant 5
 
-![solution5.PNG](attachment:solution5.PNG)
+![s1](solution5.PNG)
