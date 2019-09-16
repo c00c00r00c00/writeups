@@ -50,10 +50,13 @@ rsa_table = Image.open('rsa.png').resize((int(1179*scale),int(613*scale)))
 rsa_table
 ```
 
+![png](rsa.png) 
 
 
 
-![png](output_8_0.png)
+
+
+
 
 
 
@@ -100,17 +103,17 @@ print(flag)
 different solutions from other teams:
 
 variant 2
-
-![solution2.PNG](attachment:solution2.PNG)
+ 
+![PNG](solution2.PNG)
 
 variant 3
 
-![solution3.PNG](attachment:solution3.PNG)
+![PNG](solution3.PNG)
 
 variant 4
 
-![solution4.PNG](attachment:solution4.PNG)
+!PNG](solution4.PNG)
 
 variant 5
 
-![solution5.PNG](attachment:solution5.PNG)
+![PNG](solution5.PNG)
