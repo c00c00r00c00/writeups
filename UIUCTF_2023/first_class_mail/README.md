@@ -9,7 +9,7 @@ Hint: I think code is cool.
 
 ## Solution
 
-1. **Initial Analysis**: So, at first glance of the image Jonah posted, I noticed that they had received a letter from a local Erie Insurance Agency called 'Lanyi Insurance Agency LLC'. I tried a quick Google search of the company and found their address which included the ZIP code 15642. This was obviously incorrect and a distraction. 
+1. **Initial Analysis**: At first glance of the image Jonah posted, I noticed that they had received a letter from a local Erie Insurance Agency called 'Lanyi Insurance Agency LLC'. I tried a quick Google search of the company and found their address which included the ZIP code 15642. This was obviously incorrect and a distraction. 
 
 2. **Metadata Check**: I checked the image for any embedded metadata, but unfortunately, no useful information was found.
 
@@ -19,4 +19,4 @@ Hint: I think code is cool.
 
 5. **Extracting the ZIP code**: According to [Wikipedia](https://en.wikipedia.org/wiki/POSTNET), the first five digits of the decoded barcode represent the ZIP code. Thus, I tried the flag `uiuctf{60661}` and it was confirmed to be the correct answer!
 
-6. **Takeaway**: So, when I first saw the barcode, I actually laughed and thought to myself "Nah, there's no way the ZIP code is hidden in there." Little did I know that barcodes actually hold so much information. This challenge really opened my eyes to that fact. It makes you wonder how many people out there have unknowingly uploaded photos with a sneaky barcode lurking in the background, hinting at their potential whereabouts. It's kind of creepy when you think about it.
+6. **Takeaway**: When I first saw the barcode, I actually laughed and thought to myself "Nah, there's no way the ZIP code is hidden in there." Little did I know that barcodes actually hold so much information. This challenge really opened my eyes to that fact. It makes you wonder how many people out there have unknowingly uploaded photos with a sneaky barcode lurking in the background, hinting at their potential whereabouts. It's kind of creepy when you think about it.
